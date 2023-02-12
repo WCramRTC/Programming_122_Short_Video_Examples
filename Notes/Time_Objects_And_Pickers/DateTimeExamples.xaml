@@ -1,0 +1,15 @@
+﻿<Window x:Class="Short_Video_Examples.Notes.Time_Objects_And_Pickers.DateTimeExamples"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Short_Video_Examples.Notes.Time_Objects_And_Pickers"
+        mc:Ignorable="d"
+        Title="DateTimeExamples" Height="450" Width="800">
+    <Grid Background="#FFFFFDC0">
+        <DatePicker HorizontalAlignment="Left" Margin="334,23,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+        <Calendar HorizontalAlignment="Left" Margin="57,34,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+        <DatePicker HorizontalAlignment="Left" Margin="547,23,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+
+    </Grid>
+</Window>
