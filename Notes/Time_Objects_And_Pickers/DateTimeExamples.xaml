@@ -5,11 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Short_Video_Examples.Notes.Time_Objects_And_Pickers"
         mc:Ignorable="d"
-        Title="DateTimeExamples" Height="450" Width="800">
-    <Grid Background="#FFFFFDC0">
-        <DatePicker HorizontalAlignment="Left" Margin="334,23,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
-        <Calendar HorizontalAlignment="Left" Margin="57,34,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
-        <DatePicker HorizontalAlignment="Left" Margin="547,23,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+        Title="DateTimeExamples" Height="534" Width="800">
+    <Canvas Background="#FFFFFDC0">
+        <DatePicker x:Name="dtpStart" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold" Canvas.Left="346" Canvas.Top="74"/>
+        <Calendar x:Name="calDate" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold" Canvas.Left="73" Canvas.Top="29"/>
+        <DatePicker x:Name="dtpEnd" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold" Canvas.Left="602" Canvas.Top="70"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="346" Canvas.Top="39"/>
+        <Label Content="End Date" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="602" Canvas.Top="31"/>
+        <Button Content="Display Date" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="164" FontSize="18" Click="Button_Click" Canvas.Left="73" Canvas.Top="209"/>
+        <RichTextBox Canvas.Left="57" Canvas.Top="263" Width="259" HorizontalAlignment="Left" Height="221" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplayTimes" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox Height="354" Width="417" Canvas.Left="346" Canvas.Top="130" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplayTimeDifference" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Display" Canvas.Left="523" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="63" Click="Button_Click_1"/>
 
-    </Grid>
+    </Canvas>
 </Window>

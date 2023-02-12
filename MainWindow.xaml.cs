@@ -23,13 +23,14 @@ namespace Short_Video_Examples
         public MainWindow()
         {
             InitializeComponent();
-            new Notes.RadioButton_CheckBoxes.Radio_Button_Example().Show();
+            new Notes.Rich_Text_Box.Rich_Text_Box_Advanced().Show();
+
 
         }
 
         private void btnRdButton_Click(object sender, RoutedEventArgs e)
         {
-            new Notes.RadioButton_CheckBoxes.Radio_Button_Example().Show();
+            new Notes.Rich_Text_Box.Rich_Text_Box_Advanced().Show();
         }
     }
 }
