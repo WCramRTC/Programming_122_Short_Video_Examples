@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Notes\Sliders\" />
+    <Compile Remove="Notes\Sliders\**" />
+    <EmbeddedResource Remove="Notes\Sliders\**" />
+    <None Remove="Notes\Sliders\**" />
+    <Page Remove="Notes\Sliders\**" />
   </ItemGroup>
 
 </Project>
